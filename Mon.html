@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Little Angel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --pink:#f7bfd7;
+    --pink-dark:#ec8fba;
+    --text:#666;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+
+    background:url("https://github.com/morebernalesmeralda06-hue/Esme/blob/main/WhatsApp%20Image%202026-06-19%20at%2010.16.57%20PM.jpeg?raw=true");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.card{
+    width:900px;
+    max-width:100%;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+    padding:35px;
+
+    position:relative;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+}
+
+.photo-frame{
+    width:100%;
+    max-width:550px;
+    margin:auto;
+
+    border:12px solid #ffd9e9;
+    background:white;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.photo-frame img{
+    width:100%;
+    display:block;
+}
+
+.tags{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-top:15px;
+}
+
+.tags span{
+    background:#f7bfd7;
+    color:white;
+
+    padding:10px 20px;
+    border-radius:8px;
+
+    font-family:"Playfair Display",serif;
+    font-size:1.4rem;
+}
+
+.title{
+    text-align:center;
+    margin-top:30px;
+
+    font-family:"Playfair Display",serif;
+    color:#ec8fba;
+    font-size:4rem;
+}
+
+.divider{
+    text-align:center;
+    color:#f5b4d2;
+    font-size:1.3rem;
+    margin:10px 0 25px;
+}
+
+.text{
+    max-width:700px;
+    margin:auto;
+
+    text-align:center;
+
+    font-family:"Poppins",sans-serif;
+    color:var(--text);
+
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.text p{
+    margin-bottom:18px;
+}
+
+/* AUDIO */
+
+.audio-player{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.audio-player audio{
+    width:450px;
+    max-width:100%;
+}
+
+/* DECORACIÓN */
+
+.heart{
+    position:absolute;
+    color:#f7a6cb;
+}
+
+.h1{
+    top:55%;
+    right:140px;
+    font-size:45px;
+}
+
+.h2{
+    top:60%;
+    right:90px;
+    font-size:28px;
+}
+
+.h3{
+    top:28%;
+    left:60px;
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+    .title{
+        font-size:2.6rem;
+    }
+
+    .tags{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .audio-player audio{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="photo-frame">
+
+        <img src="https://github.com/morebernalesmeralda06-hue/Esme/blob/main/WhatsApp%20Image%202026-06-19%20at%2010.15.20%20PM.jpeg?raw=true">
+
+    </div>
+
+    <div class="tags">
+        <span>My</span>
+        <span>Little</span>
+        <span>Angel</span>
+    </div>
+
+    <h1 class="title">Mi fan de Mon</h1>
+
+    <div class="divider">
+        ✦ ✦ ✦
+    </div>
+
+    <div class="text">
+
+        <p>
+            Mi querido amor esta carta nace de nuestra melancolía siempre
+            quise ser mejor para no arruinar nuestros planes en un desastre
+            de cenizas.
+        </p>
+
+        <p>
+            Nuestro amor merece ser eterno, no una etapa que se olvida.
+            Si sobrevivimos al frío del invierno ¿por qué no aguantar un poco más?
+        </p>
+
+        <p>
+            Quédate a pesar de la tristeza, te pido que no te vayas.
+            Sé que podemos con el peso de los días porque más allá de cualquier
+            problema te voy a amar siempre por los siglos de los huesos.
+        </p>
+
+    </div>
+
+    <!-- AUDIO -->
+
+    <div class="audio-player">
+        <audio controls autoplay loop>
+            <source src="https://github.com/morebernalesmeralda06-hue/Esme/raw/refs/heads/main/Mi%20querido%20amor.mpeg" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+    </div>
+
+    <!-- DECORACIÓN -->
+
+    <div class="heart h1">♥</div>
+    <div class="heart h2">♥</div>
+    <div class="heart h3">★</div>
+
+</div>
+
+</body>
+</html>
